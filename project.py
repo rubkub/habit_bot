@@ -4,14 +4,14 @@ import datetime
 from datetime import timedelta
 
 
-my_token = '7941440183:AAEgrsgfbXgofWn3rPD0waKdZ8hGg8IkHPs'
+my_token = 'Ваш токен'
 bot = telebot.TeleBot(token=my_token)
-HABITS_FILE = 'C:\\Users\\ivano\\OneDrive\\Рабочий стол\\Программы\\Module\\habits.json'
+HABITS_FILE = 'Ваш файл .json'
 
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, 'Привет! Я бот для записи твоих привычек. Используй /add_habit для добавления привычки, /list_habits для просмотра, /delete_habit для удаления привычки и /edit_habit для изменения привычки.')
+    bot.send_message(message.chat.id, 'Привет! Я бот для записи твоих привычек. Используй /add_habit для добавления привычки, /mark_habit для отметки привычки, /list_habits для просмотра привычек, /delete_habit для удаления привычки, /edit_habit для изменения привычки, /delete_habit для удаления привычки, /stats для показа статистики выполнения привычек и /reminders для уведомления о сегодняшних привычках.')
 
 @bot.message_handler(commands=['add_habit'])
 def add_habit(message):
