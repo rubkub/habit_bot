@@ -4,9 +4,9 @@ import datetime
 from datetime import timedelta
 
 
-my_token = 'Ваш токен'
+my_token = 'Ваш токен телеграмм бота'
 bot = telebot.TeleBot(token=my_token)
-HABITS_FILE = 'Ваш файл .json'
+HABITS_FILE = 'Ваш файл .json для записи привычек'
 
 
 @bot.message_handler(commands=['start'])
