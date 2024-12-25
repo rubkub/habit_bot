@@ -6,7 +6,7 @@ from datetime import timedelta
 
 my_token = 'Ваш токен телеграмм бота'
 bot = telebot.TeleBot(token=my_token)
-HABITS_FILE = 'Ваш файл .json для записи привычек'
+HABITS_FILE = 'Ваш файл в формате .json для записи привычек'
 
 
 @bot.message_handler(commands=['start'])
