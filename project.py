@@ -4,9 +4,9 @@ import datetime
 from datetime import timedelta
 
 
-my_token = 'Ваш токен телеграмм бота'
+my_token = 'Ваш токен телеграмм бота.'
 bot = telebot.TeleBot(token=my_token)
-HABITS_FILE = 'Ваш файл в формате .json для записи привычек'
+HABITS_FILE = 'Ваш файл в формате .json для записи привычек.'
 
 
 @bot.message_handler(commands=['start'])
@@ -152,4 +152,4 @@ def open_habits():
   return habits
 
 
-bot.polling(none_stop=True)
+bot.infinity_polling(none_stop=True)
