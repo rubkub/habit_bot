@@ -116,8 +116,6 @@ def process_habit_edit(message, old_habit_text, new_habit_text):
 
 @bot.message_handler(commands=['stats'])
 def stats(message):
-  user_id = message.from_user.id
-  
   habits = open_habits()
 
   if habits:
