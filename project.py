@@ -59,8 +59,6 @@ def process_mark_habit(message):
 
 @bot.message_handler(commands=['list_habits'])
 def list_habits(message):
-  user_id = message.from_user.id
-
   habits = open_habits()
 
   if habits:
